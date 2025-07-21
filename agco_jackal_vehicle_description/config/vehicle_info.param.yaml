@@ -1,12 +1,20 @@
 /**:
   ros__parameters:
-    wheel_radius: 0.383 # The radius of the wheel, primarily used for dead reckoning.
-    wheel_width: 0.235 # The lateral width of a wheel tire, primarily used for dead reckoning.
-    wheel_base: 2.79 # between front wheel center and rear wheel center
-    wheel_tread: 1.64 # between left wheel center and right wheel center
-    front_overhang: 1.0 # between front wheel center and vehicle front
-    rear_overhang: 1.1 # between rear wheel center and vehicle rear
-    left_overhang: 0.128 # between left wheel center and vehicle left
-    right_overhang: 0.128 # between right wheel center and vehicle right
-    vehicle_height: 2.5
+    wheel_radius: 0.098 # The radius of the wheel, primarily used for dead reckoning.
+    wheel_width: 0.040 # The lateral width of a wheel tire, primarily used for dead reckoning.
+    wheel_base: 0.262 # between front wheel center and rear wheel center
+    wheel_tread: 0.37559 # between left wheel center and right wheel center
+    front_overhang: 0.1 # between front wheel center and vehicle front
+    rear_overhang: 0.1 # between rear wheel center and vehicle rear
+    left_overhang: 0.04 # between left wheel center and vehicle left
+    right_overhang: 0.04 # between right wheel center and vehicle right
+    vehicle_height: 0.184 # Jackal Height (without LiDAR)
+    #TODO - to understand what we should put here
     max_steer_angle: 0.70 # [rad]
+
+
+# Use Mesh/RVIZ/TF to get the overhangs, can't find them in configs
+# Chassis Length - 0.420 - from urdf
+# Chassis Width - 0.310 - from urdf
+# Chassis Height - 0.184 - from urdf
+# Wheel Tread is the Wheel Track here -> is the distance between centers of two wheels on same axle
